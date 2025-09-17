@@ -1,5 +1,7 @@
-import cv2 as cv
-img = cv.imread('ejemplo.jpeg', 0)
-cv.imshow('Ejemplo', img)
-cv.waitKey()
-cv.destroyAllWindows()
+def f(x):
+    if x > 100:
+        return x - 10
+    else:
+        return f(f(x + 1))
+
+print(f(100))
