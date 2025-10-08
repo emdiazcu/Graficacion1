@@ -1,7 +1,7 @@
 import cv2 as cv 
 
 rostro = cv.CascadeClassifier('haarcascade_frontalface_alt2.xml')
-cap = cv.VideoCapture(1)
+cap = cv.VideoCapture(0)
 
 while True:
     ret, img = cap.read()
